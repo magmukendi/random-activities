@@ -1,7 +1,10 @@
 # random-activities
-**Randactivity** is a web application suggesting the user random but interesting activities to do.
 
 ![Randactivity](https://github.com/243Studio/gif/raw/main/random.gif)
+
+**[Randactivity](https://magmukendi.me/random-activities/)** is a web application suggesting the user random but interesting activities to do.
+
+
 
 ## Install & Usage
 
