@@ -7,7 +7,7 @@
 
 For local use, clone the project locally, follow the steps below:
 
-- Clone the repository locally by using `git clone https://github.com/LeGrandMAG/quickymeme.git`.
+- Clone the repository locally by using `git clone https://github.com/LeGrandMAG/random-activities.git`.
 - Install node.js and run `npm install`.
 - Run `npm start` to run the server locally.
 - There is fun in random things, challenge Yourself with **Randactivity**
