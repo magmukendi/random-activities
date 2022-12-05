@@ -10,24 +10,25 @@ For local use, clone the project locally, follow the steps below:
 - Clone the repository locally by using `git clone https://github.com/LeGrandMAG/quickymeme.git`.
 - Install node.js and run `npm install`.
 - Run `npm start` to run the server locally.
-- Create your favorite meme with **Quicky Meme**
+- There is fun in random things, challenge Yourself with **Randactivity**
 
 ## Features
 
-- [X] Add a Top text to the image.
-- [X] Add a bottom text to the image.
-- [X] Download the image.
-- [X] Share the image on social networks.
-- [ ] Change the position of the Texts.
-- [ ] Change the color of the Texts.
-- [ ] Resize the image.
+- [X] Display Random activities to the User.
+- [ ] Allow the user to keep track of activities he has completed.
+- [ ] Allow user to save activities into his favorite.
+- [ ] Allow the user to share his achievement with his friend.
+- [ ] Allow user to add new activities and share it with the world.
+- [ ] Display the best Randactivity users.
+- [ ] Gamify the web application by adding rewards.
+- [ ] Allow user to share a picture of their random activities.
 
 
 ## Technology & Ressources
 
 - React.js
-- [imgflip API](https://imgflip.com/api)
-- [Twitter API](https://developer.twitter.com/)
+- [socket.io](https://imgflip.com/api)
+- [Cloud firestore](https://firebase.google.com/docs/firestore)
 - [OAuth2](https://oauth.net/2/)
 
 
@@ -35,9 +36,5 @@ For local use, clone the project locally, follow the steps below:
 - Google Chrome 107.0.5304.107
 - Firefox 107.0
 
-
-## Deployment  Status:
-[![pages-build-deployment](https://github.com/LeGrandMAG/random-activities/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/LeGrandMAG/random-activities/actions/workflows/pages/pages-build-deployment)
-
 ## License
-Quicky Meme is MIT licensed.
+Randactivity is MIT licensed.
