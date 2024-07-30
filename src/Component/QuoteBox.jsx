@@ -19,7 +19,7 @@ function Loading(){
     )
 }
 export default function QuoteBox() {
-    let boredUrl = "https://www.boredapi.com/api/activity";
+    let boredUrl = "https://bored.api.lewagon.com/api/activity";
     function getRandomInt(min, max) {
       min = Math.ceil(min);
       max = Math.floor(max);
