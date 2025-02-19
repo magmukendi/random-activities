@@ -1,4 +1,4 @@
-name: WEPO Homepage update
+name: Random Activities
 on:
   push:
     branches:
@@ -18,11 +18,16 @@ jobs:
     - name: Install Packages
       run: npm install
     - name: Deploy to GH Pages
-      run: |
-        git config --global user.email ${{secrets.EMAIL}}
-        git config --global user.name ${{secrets.USERNAME}}
-        git remote set-url origin https://${{secrets.PERSONAL_TOKEN}}@github.com/${{secrets.USERNAME}}/wepoHomepage.git
+      run:  |
+        git config --global user.name $user_name
+        git config --global user.email $user_email
+           git remote set-url origin https://${github_token}@github.com/${repository}
         npm run deploy
+      env:
+        user_name: "github-actions[bot]"
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+        github_token: ${{ secrets.RANDOM_ACTIVITIES }}
+        repository: ${{ github.repository}}
     - name: Updating Domain
       run: echo "Update domain"
 
