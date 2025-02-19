@@ -13,7 +13,7 @@ function Loading() {
   );
 }
 export default function QuoteBox() {
-  let boredUrl = "http://bored.api.lewagon.com/api/activity/";
+  let boredUrl = "https://bored.api.lewagon.com/api/activity/";
   function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -29,21 +29,16 @@ export default function QuoteBox() {
     }, 4000);
   }
   function update() {
-    console.log(activity);
     fetch(boredUrl)
       .then(function (res) {
         return res.json();
       })
-      .then((dat) => {
-        setActivity(dat["activity"]);
+      .then((data) => {
+        console.log(data.activity);
+        setActivity(data.activity);
       });
   }
 
-  // let x = quotes[getRandomInt(0,quotes.length-1)]
-  // console.table(x)
-
-  //console.log(lovv[1]["hate"])
-  //console.log(quotes[10])
   return (
     <>
       {loading ? (
